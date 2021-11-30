@@ -51,21 +51,25 @@ body{
     position: relative;
     display: inline-block;
  }
+
+ .method-opt{
+     display: none;
+ }
     
-.method ul{
+.method-opt ul{
     padding: 0;
     margin: 2px 0px 2px 0px;
     list-style-type: none;
 }
     
-.method li{
+.method-opt li{
     background-color: rgb(184, 181, 187);
     padding: 10px 4px 10px 4px;
     margin: 2px 0px 2px 0px;
     border-radius: 10px;
 }
     
-.method-selector{
+#method-selector{
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -74,8 +78,5 @@ body{
     margin: 0;
     border-radius: 10px;
     background-color: rgb(184, 181, 187);
-}
-
-.method-selector:hover + .method ul{
-    display: none;
+    cursor: pointer;
 }

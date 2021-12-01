@@ -1,10 +1,24 @@
-var dropdownVisible = false;
-document.getElementById("method-selector").addEventListener("click", function () {
+var dropdownVisible = true;
+
+// shows drop-down on clicking.
+function hideAndShowDropdown(opts) {
     if (dropdownVisible) {
-        document.getElementsByClassName("method-opt")[0].style.display = "block";
+        opts.style.display = "block";
     }
     else {
-        document.getElementsByClassName("method-opt")[0].style.display = "none";
+        opts.style.display = "none";
     }
     dropdownVisible = !dropdownVisible;
+}
+
+document.getElementById("method-selector").addEventListener("click", function () {
+    hideAndShowDropdown(document.getElementById("method-opt"))
 });
+
+// replaces the content of method-selector to the option selected.
+function selectMethod(value) {
+    document.getElementById("method-selector").getElementsByTagName("p")[0].textContent = value;
+    hideAndShowDropdown(document.getElementById("method-opt"));
+}
+
+

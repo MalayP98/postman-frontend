@@ -16,13 +16,13 @@
             <p>GET</p>
             <img src="dropdown.png" width="22">
         </div>
-        <div class="method-opt">
+        <div id="method-opt">
             <ul>
-                <li>GET</li>
-                <li>POST</li>
-                <li>DELETE</li>
-                <li>PUT</li>
-                <li>PATCH</li>
+                <li onclick="selectMethod('GET')">GET</li>
+                <li onclick="selectMethod('POST')">POST</li>
+                <li onclick="selectMethod('DELETE')">DELETE</li>
+                <li onclick="selectMethod('PUT')">PUT</li>
+                <li onclick="selectMethod('PATCH')">PATCH</li>
             </ul>
         </div>
     </div>
@@ -31,6 +31,8 @@
         <input type="text" class="common-input">
         <button type="submit" class="common-button">SEND</button>
     </div>
+
+    <!-- <div class="additions"></div> -->
 
 </body>
 <script src="index.js"></script>

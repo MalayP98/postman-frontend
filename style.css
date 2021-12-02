@@ -4,6 +4,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    height: 40vh;
 }
 
 .request{
@@ -54,7 +55,9 @@ body{
  }
 
  #method-opt{
+     position: relative;
      display: none;
+     z-index: 1;
  }
     
 #method-opt ul{
@@ -69,6 +72,7 @@ body{
     margin: 2px 0px 2px 0px;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 2px;
 }
 
 #method-opt li:hover{
@@ -90,8 +94,86 @@ body{
 .additions{
     position: absolute;
     bottom: 0;
-    background-color: rgb(188, 162, 212);
-    width: 40vw;
-    height: 10vh;
-
+    width: 58%;
+    height: 85%; 
 }
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nav-item{
+    background-color: rgb(206, 203, 209);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    margin: 2px;
+    color: rgb(253, 253, 253);
+    flex-grow: 1;
+}
+
+.nav-item:hover{
+    background-color: rgb(164, 162, 166);
+    color: rgb(0, 0, 0);
+}
+
+.authorization{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.auth-types{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.auth-type{
+    width: 7vw;
+    border-style: solid;
+    border-color: rgb(142, 197, 236);
+    border-radius: 4px;
+    border-width: 2px;
+    color: rgb(142, 197, 236);
+    text-align: center;
+    padding: 4px;
+    flex: 0 1 auto;
+}
+
+.auth-type:hover{
+    background-color: rgb(142, 197, 236);
+    color: white;
+}
+
+.apikeyinp{
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+}
+
+.apikey-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apikey-inp{
+    position: relative;
+    width: 80%;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    margin: 3px;
+    padding: 7px;
+}
+

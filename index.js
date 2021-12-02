@@ -21,4 +21,17 @@ function selectMethod(value) {
     hideAndShowDropdown(document.getElementById("method-opt"));
 }
 
+function rgb(red, green, blue) {
+    return "rgb(" + red + ", " + green + ", " + blue + ")";
+}
+
+// default active tab will be Authorization
+var defaultConfigTab = document.getElementsByClassName("nav-item")[0]
+defaultConfigTab.style.backgroundColor = rgb(142, 197, 236);
+defaultConfigTab.style.color = rgb(0, 0, 0);
+console.log(document.getElementsByClassName("nav-item")[0]);
+
+// default auth type tab
+// var defaultAuthTypeTab = document.getElementsByClassName
+
 

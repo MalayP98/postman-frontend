@@ -67,6 +67,26 @@ function selectAuthType(idx) {
     document.getElementsByClassName(authTypeList[currentAuthType])[0].style.display = "flex";
 }
 
+function addRow() {
+    // var child = document.createElement("div")
+    // child.id = "header";
+    // var inp = document.createElement("input");
+    // inp.className = "apikey-inp";
+    // inp.type = "text";
+    // var deleteRow = document.createElement("div");
+    // deleteRow.className = "delete-row";
+    // child.appendChild(inp).appendChild(inp).appendChild(deleteRow);
+    // console.log(child);
+    // document.getElementById("headers").appendChild(child);
+    document.getElementById("table").innerHTML += `
+                <div id="header">
+                    <input placeholder="KEY" class="apikey-inp" type="text">
+                    <input placeholder="VALUE" class="apikey-inp" type="text">
+                    <div class="delete-row">DELETE</div>
+                </div>
+    `;
+}
+
 
 
 

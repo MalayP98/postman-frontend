@@ -130,37 +130,48 @@ body{
 
 #headers{
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    max-height: 200px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-.keys, .values{
-    margin: 3px;
-    position: relative;
-    flex-grow: 1;
+#table{
+    overflow-y: auto;
+    width: 100%;
+    margin: 0;
 }
+
+#header{
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 .add-row{
-    position: absolute;
-    top: 0;
-    right: 0;
     background-color: rgb(56, 221, 111);
     font-size: x-small;
+    flex: 1;
     padding: 5px;
+    margin-top: 4px;
+    text-align: center;
     border-radius: 5px;
     color: white;
     cursor: pointer;
 }
 
 .delete-row{
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: 13%;
     right: 0;
     background-color: rgb(221, 56, 56);
     font-size: x-small;
     text-align: center;
-    padding: 5px;
+    padding: 7px;
     border-radius: 5px;
     color: white;
     cursor: pointer;

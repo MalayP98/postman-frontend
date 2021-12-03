@@ -74,17 +74,26 @@
                 </div>
             </div>
             <div id="headers">
-                <div id="table">
+                <div id="header-table">
                     <div id="header">
                         <input placeholder="KEY" class="apikey-inp" type="text">
                         <input placeholder="VALUE" class="apikey-inp" type="text">
                         <div class="delete-row">DELETE</div>
                     </div>
                 </div>
-                <div onclick="addRow()" class="add-row">ADD</div>
+                <div onclick="addRow('header')" class="add-row">ADD</div>
             </div>
             <div id="body"></div>
-            <div id="params"></div>
+            <div id="params">
+                <div id="param-table">
+                    <div id="param">
+                        <input placeholder="KEY" class="apikey-inp" type="text">
+                        <input placeholder="VALUE" class="apikey-inp" type="text">
+                        <div class="delete-row">DELETE</div>
+                    </div>
+                </div>
+                <div onclick="addRow('param')" class="add-row">ADD</div>
+            </div>
         </div>
     </div>
 

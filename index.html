@@ -29,7 +29,7 @@
 
     <div class="request">
         <input type="text" class="common-input">
-        <button type="submit" class="common-button">SEND</button>
+        <button type="submit" class="common-button" onclick="sendRequest()">SEND</button>
     </div>
 
     <div class="additions">
@@ -78,18 +78,36 @@
                     <div id="header">
                         <input placeholder="KEY" class="apikey-inp" type="text">
                         <input placeholder="VALUE" class="apikey-inp" type="text">
-                        <div class="delete-row">DELETE</div>
+                        <div class="delete-row" onclick="deleteRow(this)">DELETE</div>
                     </div>
                 </div>
                 <div onclick="addRow('header')" class="add-row">ADD</div>
             </div>
-            <div id="body"></div>
+            <div id="body">
+                <div class="payload-opts">
+                    <div class="payload-opt" onclick="selectBodyType(0)">form-data</div>
+                    <div class="payload-opt" onclick="selectBodyType(1)">url-encoded</div>
+                    <div class="payload-opt" onclick="selectBodyType(2)">raw</div>
+                </div>
+                <div id="form-data"></div>
+                <div id="url-encoded-fields">
+                    <div id="url-encoded-table">
+                        <div id="url-encoded">
+                            <input placeholder="KEY" class="apikey-inp" type="text">
+                            <input placeholder="VALUE" class="apikey-inp" type="text">
+                            <div class="delete-row" onclick="deleteRow(this)">DELETE</div>
+                        </div>
+                    </div>
+                    <div onclick="addRow('url-encoded')" class="add-row">ADD</div>
+                </div>
+                <textarea id="raw"></textarea>
+            </div>
             <div id="params">
                 <div id="param-table">
                     <div id="param">
                         <input placeholder="KEY" class="apikey-inp" type="text">
                         <input placeholder="VALUE" class="apikey-inp" type="text">
-                        <div class="delete-row">DELETE</div>
+                        <div class="delete-row" onclick="deleteRow(this)">DELETE</div>
                     </div>
                 </div>
                 <div onclick="addRow('param')" class="add-row">ADD</div>

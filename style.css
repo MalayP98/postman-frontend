@@ -1,4 +1,4 @@
-body{
+body {
     position: relative;
     font-family: sans-serif;
     display: flex;
@@ -7,20 +7,20 @@ body{
     height: 40vh;
 }
 
-.request{
+.request {
     position: relative;
     top: 0;
     width: max-content;
     background-color: rgb(208, 223, 236);
     padding: 5px;
-    display: flex; 
-    border-radius: 5px; 
+    display: flex;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
     margin-left: 3px;
 }
 
-.common-input{
+.common-input {
     position: relative;
     width: 40vw;
     height: 27px;
@@ -31,7 +31,7 @@ body{
     font-size: small;
 }
 
-.common-button{
+.common-button {
     position: relative;
     height: 32px;
     width: 7vw;
@@ -43,30 +43,30 @@ body{
     cursor: pointer;
 }
 
-.common-button:hover{
+.common-button:hover {
     background-color: rgb(109, 178, 238);
 }
 
-.method{
+.method {
     width: 8%;
     height: auto;
     position: relative;
     display: inline-block;
- }
+}
 
- #method-opt{
-     position: relative;
-     display: none;
-     z-index: 1;
- }
-    
-#method-opt ul{
+#method-opt {
+    position: relative;
+    display: none;
+    z-index: 1;
+}
+
+#method-opt ul {
     padding: 0;
     margin: 2px 0px 2px 0px;
     list-style-type: none;
 }
-    
-#method-opt li{
+
+#method-opt li {
     background-color: rgb(184, 181, 187);
     padding: 10px 4px 10px 8px;
     margin: 2px 0px 2px 0px;
@@ -75,11 +75,12 @@ body{
     box-shadow: 2px;
 }
 
-#method-opt li:hover{
-    background-color: rgb(158, 157, 159);;
+#method-opt li:hover {
+    background-color: rgb(158, 157, 159);
+    ;
 }
-    
-#method-selector{
+
+#method-selector {
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -91,14 +92,14 @@ body{
     cursor: pointer;
 }
 
-.additions{
+.additions {
     position: absolute;
     bottom: 0;
     width: 58%;
-    height: 85%; 
+    height: 85%;
 }
 
-.config-area{
+.config-area {
     border-style: solid;
     border-radius: 4px;
     border-color: rgb(198, 231, 243);
@@ -106,14 +107,14 @@ body{
     margin-top: 16px;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin-top: 5px;
 }
 
-.nav-item{
+.nav-item {
     background-color: rgb(206, 203, 209);
     border-radius: 4px;
     padding: 10px;
@@ -129,14 +130,16 @@ body{
     color: rgb(0, 0, 0);
 } */
 
-#authorization{
+#authorization {
     position: relative;
     display: flex;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-#headers, #params{
+#headers,
+#params,
+#url-encoded-fields {
     position: relative;
     max-height: 200px;
     display: none;
@@ -145,20 +148,24 @@ body{
     align-content: center;
 }
 
-#header-table, #param-table{
+#header-table,
+#param-table,
+#url-encoded-table {
     overflow-y: auto;
     width: 100%;
     flex-grow: 1;
 }
 
-#header, #param{
+#header,
+#param,
+#url-encoded {
     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.add-row{
+.add-row {
     background-color: rgb(56, 221, 111);
     font-size: x-small;
     flex: 1;
@@ -170,7 +177,7 @@ body{
     cursor: pointer;
 }
 
-.delete-row{
+.delete-row {
     position: relative;
     bottom: 13%;
     right: 0;
@@ -184,15 +191,15 @@ body{
     cursor: pointer;
 }
 
-#body{
+#body {
     display: none;
 }
 
-#params{
+#params {
     display: none;
 }
 
-.auth-types{
+.auth-types {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -201,7 +208,7 @@ body{
     padding: 4px;
 }
 
-.auth-type{
+.auth-type {
     width: 7vw;
     border-style: solid;
     border-color: rgb(142, 197, 236);
@@ -219,7 +226,9 @@ body{
     color: white;
 } */
 
-.apikey, .basic, .bearer{
+.apikey,
+.basic,
+.bearer {
     position: relative;
     height: 80px;
     display: flex;
@@ -230,21 +239,22 @@ body{
     padding: 40px;
 }
 
-.basic{
+.basic {
     display: none;
 }
 
-.bearer{
+.bearer {
     display: none;
 }
 
-.apikey-child, .bearer-child{
+.apikey-child,
+.bearer-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.apikey-inp{
+.apikey-inp {
     position: relative;
     width: 80%;
     border-radius: 4px;
@@ -254,3 +264,45 @@ body{
     padding: 7px;
 }
 
+.payload-opts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.payload-opt {
+    border-style: solid;
+    border-color: rgb(142, 197, 236);
+    color: rgb(142, 197, 236);
+    border-radius: 4px;
+    border-width: 2px;
+    padding: 3px;
+    text-align: center;
+    margin: 3px;
+    cursor: pointer;
+}
+
+#body {
+    position: relative;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#url-encoded-fields {
+    flex-grow: 1;
+}
+
+#raw {
+    display: none;
+    border-color: rgb(142, 197, 236);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    position: static;
+    float: right;
+    width: 84%;
+    height: 90px;
+    margin: 3px 5px 3px;
+}
